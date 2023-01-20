@@ -8,6 +8,10 @@ body {
   margin: auto;
 }
 
+header {
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -38,6 +42,18 @@ footer {
 } */
 .omf-search, .omf-restaurants {
   background: #f1eded;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.form__input-text {
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

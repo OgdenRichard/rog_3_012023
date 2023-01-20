@@ -1,19 +1,23 @@
 * {
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-  }
+}
 
-  ul {
+header {
+    text-align: center;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  footer{
+footer {
     background: $colour-darkgrey;
-  }
+}
