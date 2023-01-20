@@ -6,15 +6,38 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: auto;
-  font-size: 16px;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
+footer {
+  background: #1b1b1b;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+footer > h2 {
   font-family: "shrikhand", "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+footer {
+  color: #fff;
+}
+
+/* footer>h2{
+    font-size: 1em;
+} */
+.omf-search, .omf-restaurants {
+  background: #f1eded;
 }
 
 /*# sourceMappingURL=style.css.map */

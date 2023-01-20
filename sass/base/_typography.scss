@@ -1,3 +1,18 @@
-h1 {
-    font-family: 'shrikhand','Roboto', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
+
+h1,
+footer>h2 {
+    font-family: 'shrikhand', 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    color: $colour-white;
+}
+
+/* footer>h2{
+    font-size: 1em;
+} */
