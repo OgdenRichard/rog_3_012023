@@ -11,8 +11,7 @@
         text-align: center;
         outline: none;
         border: transparent;
-        background: darker($colour-lightgrey);
-        box-shadow: inset 0 0.3em 0.2em rgb(139, 139, 139);
+        @include darken-text-input($colour-lightgrey);
     }
 
     &__submit {

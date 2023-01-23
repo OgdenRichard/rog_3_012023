@@ -42,7 +42,7 @@ footer {
     font-size: 1em;
 } */
 .omf-search, .omf-restaurants {
-  background: #f1eded;
+  background: #e9e9e9;
 }
 
 .omf-howto, .omf-restaurants {
@@ -62,8 +62,8 @@ footer {
   text-align: center;
   outline: none;
   border: transparent;
-  background: #c4b4b4;
-  box-shadow: inset 0 0.3em 0.2em rgb(139, 139, 139);
+  background: #b6b6b6;
+  box-shadow: inset 0 0.3em 0.2em #909090;
 }
 .form__submit {
   outline: none;
