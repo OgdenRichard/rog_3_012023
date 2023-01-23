@@ -87,6 +87,8 @@ input {
 
 .omf-homecard {
   height: 250px;
+  position: relative;
+  margin: 0 1.5em 0 0;
   display: flex;
   flex-direction: column;
   border-radius: 2em;
@@ -97,6 +99,15 @@ input {
   width: 100%;
   border-radius: 2em 2em 0 0;
   overflow: hidden;
+}
+.omf-homecard__info {
+  padding-left: 1.5em;
+}
+.omf-homecard__info > h3 {
+  margin: 0.75em 0 0.5em 0;
+}
+.omf-homecard__info > p {
+  margin: 0.5em 0 0 0;
 }
 
 .omf-search,
@@ -121,6 +132,7 @@ input {
 .omf-restaurants__cards {
   display: flex;
   flex-direction: column;
+  gap: 2em;
 }
 
 .form {

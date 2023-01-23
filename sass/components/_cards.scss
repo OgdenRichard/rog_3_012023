@@ -1,5 +1,7 @@
 .omf-homecard {
     height: 250px;
+    position: relative;
+    margin: 0 1.5em 0 0;
     display: flex;
     flex-direction: column;
     border-radius: 2em;
@@ -10,5 +12,15 @@
         width: 100%;
         border-radius: 2em 2em 0 0;
         overflow: hidden;
+    }
+
+    &__info {
+        padding-left: 1.5em;
+        >h3{
+            margin: 0.75em 0 0.5em 0;
+        }
+        >p{
+            margin: 0.5em 0 0 0;
+        }
     }
 }
