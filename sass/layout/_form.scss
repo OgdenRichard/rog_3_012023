@@ -5,17 +5,22 @@
     align-items: center;
     text-align: center;
 
-    &__input-text {
-        width: 100%;
-        height: 3em;
-        text-align: center;
+    &__input-text,&__submit{
+        height:3em;
         outline: none;
         border: transparent;
+        text-align: center;
+    }
+
+    &__input-text {
+        width: 100%;
         @include darken-text-input($colour-lightgrey);
     }
 
     &__submit {
-        outline: none;
-        border: transparent;
+        border-radius: 2em;
+        padding: 0 1.5em;
+        color: $colour-white;
+        background-image: linear-gradient($colour-secondary, $colour-primary);
     }
 }
