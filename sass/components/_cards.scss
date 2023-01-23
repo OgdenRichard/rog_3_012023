@@ -23,4 +23,8 @@
             margin: 0.5em 0 0 0;
         }
     }
+
+    @media only screen and (width > map-get($breakpoints, tablets)) {
+        flex: 40%;
+    }
 }

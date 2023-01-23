@@ -116,6 +116,11 @@ input {
 .omf-homecard__info > p {
   margin: 0.5em 0 0 0;
 }
+@media only screen and (width > 768px) {
+  .omf-homecard {
+    flex: 40%;
+  }
+}
 
 .omf-search,
 .omf-restaurants {
@@ -139,11 +144,23 @@ input {
   flex-direction: column;
   gap: 1.25em;
 }
+@media only screen and (width > 768px) {
+  .omf-howto__steps {
+    flex-direction: row;
+    gap: 2em;
+  }
+}
 
 .omf-restaurants__cards {
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+@media only screen and (width > 768px) {
+  .omf-restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form {
