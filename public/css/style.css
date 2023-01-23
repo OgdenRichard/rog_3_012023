@@ -12,6 +12,15 @@ header {
   text-align: center;
 }
 
+footer {
+  background: #1b1b1b;
+  padding-left: 1.5em;
+}
+footer > h2 {
+  margin-top: 0;
+  padding-top: 1em;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -24,9 +33,9 @@ img {
   object-fit: cover;
 }
 
-footer {
-  background: #1b1b1b;
-  padding-left: 1.5em;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 body,
@@ -49,9 +58,6 @@ input {
   font-weight: 550;
 }
 
-/* footer>h2{
-    font-size: 1em;
-} */
 .step {
   position: relative;
   width: 100%;
@@ -120,6 +126,11 @@ input {
   padding-left: 1.5em;
 }
 
+.omf-restaurants {
+  padding-bottom: 2em;
+  margin: 0;
+}
+
 .omf-howto__steps {
   width: 100%;
   padding-right: 1.5em;
@@ -167,6 +178,15 @@ input {
   color: #fff;
   background-image: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 0.3em 0.8em #909090;
+}
+
+.omf-footer__list li {
+  line-height: 2em;
+}
+.omf-footer__list i {
+  display: inline-block;
+  width: 1em;
+  margin-right: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

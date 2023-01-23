@@ -12,6 +12,16 @@ header {
     text-align: center;
 }
 
+footer {
+    background: $colour-darkgrey;
+    padding-left: 1.5em;
+
+    >h2 {
+        margin-top: 0;
+        padding-top: 1em;
+    }
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -24,7 +34,7 @@ img {
     object-fit: cover;
 }
 
-footer {
-    background: $colour-darkgrey;
-    padding-left: 1.5em;
+a {
+    text-decoration: none;
+    color: $colour-white;
 }
