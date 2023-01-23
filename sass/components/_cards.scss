@@ -1,0 +1,14 @@
+.omf-homecard {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2em;
+    background: $colour-white;
+
+    &__img {
+        height: 70%;
+        width: 100%;
+        border-radius: 2em 2em 0 0;
+        overflow: hidden;
+    }
+}

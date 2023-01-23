@@ -18,6 +18,12 @@ ul {
   margin: 0;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 footer {
   background: #1b1b1b;
   padding-left: 1.5em;
@@ -79,6 +85,20 @@ input {
   color: #fff;
 }
 
+.omf-homecard {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  background: #fff;
+}
+.omf-homecard__img {
+  height: 70%;
+  width: 100%;
+  border-radius: 2em 2em 0 0;
+  overflow: hidden;
+}
+
 .omf-search,
 .omf-restaurants {
   background: #e9e9e9;
@@ -96,6 +116,11 @@ input {
   display: flex;
   flex-direction: column;
   gap: 1.25em;
+}
+
+.omf-restaurants__cards {
+  display: flex;
+  flex-direction: column;
 }
 
 .form {
