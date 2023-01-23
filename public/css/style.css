@@ -85,6 +85,7 @@ input {
   border-radius: 2em;
   color: #fff;
   background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 0.3em 0.8em #909090;
 }
 
 /*# sourceMappingURL=style.css.map */

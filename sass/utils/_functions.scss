@@ -1,0 +1,9 @@
+@function darker-shift($colour, $property: 'background') {
+    @if($property=='background') {
+        @return darken($colour, 20%);
+    }
+
+    @else {
+        @return darken($colour, 35%);
+    }
+}
