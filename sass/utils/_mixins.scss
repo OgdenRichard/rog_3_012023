@@ -1,4 +1,0 @@
-@mixin darken-text-input($colour) {
-    background: darken($colour, 20%);
-    box-shadow: inset 0 0.3em 0.2em darken($colour, 35%);
-}
