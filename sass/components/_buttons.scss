@@ -1,9 +1,23 @@
 .step {
     position: relative;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5em;
     padding: 1.5em 0;
     border-radius: 1em;
     background: lighten($colour-lightgrey, 4%);
     text-align: center;
     box-shadow: 0 0.3em 0.8em darker-shift($colour-lightgrey, 'shadow');
+
+    >i {
+        display: block;
+        padding-left: 2.5em;
+        color: darken($colour-lightgrey,25%);
+    }
+
+    >p{
+        font-weight: 600;
+    }
 }

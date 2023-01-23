@@ -49,11 +49,23 @@ input {
 .step {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5em;
   padding: 1.5em 0;
   border-radius: 1em;
   background: #f3f3f3;
   text-align: center;
   box-shadow: 0 0.3em 0.8em #909090;
+}
+.step > i {
+  display: block;
+  padding-left: 2.5em;
+  color: darkgray;
+}
+.step > p {
+  font-weight: 600;
 }
 
 .omf-search, .omf-restaurants {
@@ -69,7 +81,7 @@ input {
   padding-right: 1.5em;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.25em;
 }
 
 .form {
