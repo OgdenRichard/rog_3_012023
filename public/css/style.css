@@ -62,20 +62,21 @@ input {
 .step {
   position: relative;
   width: 100%;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 1.5em;
   padding: 1.5em 0;
-  border-radius: 1em;
-  background: #f3f3f3;
+  border-radius: 1.5em;
+  background: #f4f4f4;
   text-align: center;
-  box-shadow: 0 0.3em 0.8em #909090;
+  box-shadow: 0 0.3em 0.8em #bebebe;
 }
 .step > i {
   display: block;
   padding-left: 2em;
-  color: darkgray;
+  color: #b1b1b1;
 }
 .step > p {
   font-weight: 600;
@@ -124,7 +125,7 @@ input {
 
 .omf-search,
 .omf-restaurants {
-  background: #e9e9e9;
+  background: #f1f1f1;
 }
 
 .omf-howto,
@@ -187,14 +188,14 @@ input {
 .form__input-text {
   width: 100%;
   color: #1b1b1b;
-  background: #b6b6b6;
-  box-shadow: inset 0 0.3em 0.2em #909090;
+  background: #d8d8d8;
+  box-shadow: inset 0 0.3em 0.2em #bebebe;
 }
 .form__submit {
   border-radius: 2em;
   color: #fff;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 0.3em 0.8em #909090;
+  box-shadow: 0 0.3em 0.8em #bebebe;
 }
 
 .omf-footer__list li {
