@@ -33,4 +33,11 @@
         text-align: center;
         color: $colour-white;
     }
+
+    &:hover {
+        background: lighten($colour-primary, 35%);
+        >i{
+            color: $colour-primary;
+        }
+    }
 }

@@ -13,7 +13,7 @@ header {
 }
 
 footer {
-  background: #1b1b1b;
+  background: #2c2c2c;
   padding-left: 1.5em;
 }
 
@@ -91,6 +91,12 @@ input {
   background: #9356DC;
   text-align: center;
   color: #fff;
+}
+.step:hover {
+  background: #f2eafb;
+}
+.step:hover > i {
+  color: #9356DC;
 }
 
 .omf-homecard {
@@ -177,6 +183,7 @@ input {
 }
 .form > p {
   margin: 0.5em 0 2em 0;
+  font-weight: 500;
 }
 .form__input-text-wrapper > input, .form__submit {
   height: 3em;
@@ -191,13 +198,16 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1b1b1b;
   background: #d8d8d8;
   box-shadow: inset 0 0.3em 0.2em #bebebe;
 }
 .form__input-text-wrapper > input {
   width: 160px;
   padding-left: 0.5em;
+}
+.form__input-text-wrapper > i,
+.form__input-text-wrapper > input {
+  color: #464646;
 }
 .form__submit {
   border-radius: 2em;
