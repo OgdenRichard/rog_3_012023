@@ -134,7 +134,7 @@ input {
 }
 .omf-wrapper article,
 .omf-wrapper section {
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 
 .omf-search,
@@ -144,7 +144,7 @@ input {
 
 .omf-howto,
 .omf-restaurants {
-  padding: 0 1.5em;
+  padding: 3em 1.5em 4em 1.5em;
 }
 
 .omf-restaurants {
