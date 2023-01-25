@@ -1,0 +1,46 @@
+.omf-heart {
+    position: relative;
+    width: $heart-size;
+    height: $heart-size;
+    transform: rotate(-45deg);
+    border: $heart-border solid $colour-darkgrey;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    z-index: 1;
+
+    &:hover {
+        background: $colour-primary;
+        border-bottom-color: transparent;
+        border-left-color: transparent; 
+        &::before,
+        &::after {
+            background: $colour-primary;
+            border-top-color: transparent;
+            border-left-color: transparent;          
+        }
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        border-radius: 50%;
+        border: $heart-border solid $colour-darkgrey;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+
+    &::before {
+        top: -$heart-size/2;
+        left: -$heart-border;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        top: -$heart-border;
+        left: $heart-size/2 - $heart-border*2;
+        transform: rotate(135deg);
+    }
+}
