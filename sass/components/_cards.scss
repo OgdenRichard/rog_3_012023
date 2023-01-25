@@ -21,8 +21,9 @@
         padding: 0.5em 0.75em;
         border-radius: 0.25em;
         background: $colour-tertiary;
-        color: darken($colour-tertiary,40%);
-        >p{
+        color: darken($colour-tertiary, 40%);
+
+        >p {
             margin: 0;
             font-weight: 550;
             text-align: center;
