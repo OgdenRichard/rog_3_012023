@@ -8,7 +8,7 @@
 
 .omf-howto,
 .omf-restaurants {
-    padding-left: 1.5em;
+    padding:0 1.5em;
 }
 
 .omf-restaurants {
@@ -18,7 +18,7 @@
 
 .omf-howto__steps {
     width: 100%;
-    padding: 0 1.5em 1.5em 1em;
+    padding-left: 1em;
     display: flex;
     flex-direction: column;
     gap: 1.25em;
@@ -30,8 +30,10 @@
 }
 
 .omf-restaurants__cards {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 2em;
     @media only screen and (width > map-get($breakpoints, tablets)) {
         flex-direction: row;

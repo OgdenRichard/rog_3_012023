@@ -14,7 +14,7 @@ header {
 
 footer {
   background: #2c2c2c;
-  padding-left: 1.5em;
+  padding: 0 1.5em;
 }
 
 ul {
@@ -101,8 +101,8 @@ input {
 
 .omf-homecard {
   height: 250px;
+  margin: 0;
   position: relative;
-  margin: 0 1.5em 0 0;
   display: flex;
   flex-direction: column;
   border-radius: 2em;
@@ -140,7 +140,7 @@ input {
 
 .omf-howto,
 .omf-restaurants {
-  padding-left: 1.5em;
+  padding: 0 1.5em;
 }
 
 .omf-restaurants {
@@ -150,7 +150,7 @@ input {
 
 .omf-howto__steps {
   width: 100%;
-  padding: 0 1.5em 1.5em 1em;
+  padding-left: 1em;
   display: flex;
   flex-direction: column;
   gap: 1.25em;
@@ -163,8 +163,10 @@ input {
 }
 
 .omf-restaurants__cards {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   gap: 2em;
 }
 @media only screen and (width > 768px) {
