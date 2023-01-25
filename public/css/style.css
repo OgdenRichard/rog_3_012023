@@ -132,6 +132,10 @@ input {
 .omf-wrapper {
   box-shadow: 0 0.3em 0.8em #bebebe;
 }
+.omf-wrapper article,
+.omf-wrapper section {
+  padding-bottom: 5em;
+}
 
 .omf-search,
 .omf-restaurants {
@@ -144,7 +148,6 @@ input {
 }
 
 .omf-restaurants {
-  padding-bottom: 2em;
   margin: 0;
 }
 
@@ -178,7 +181,6 @@ input {
 
 .form {
   width: 100%;
-  padding: 0 0 2em 0;
   display: flex;
   flex-direction: column;
   align-items: center;

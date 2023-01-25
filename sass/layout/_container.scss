@@ -1,6 +1,12 @@
-.omf-wrapper{
+.omf-wrapper {
     box-shadow: 0 0.3em 0.8em darker-shift($colour-lightgrey, 'shadow');
+
+    article,
+    section {
+        padding-bottom: 5em;
+    }
 }
+
 .omf-search,
 .omf-restaurants {
     background: $colour-lightgrey;
@@ -8,11 +14,10 @@
 
 .omf-howto,
 .omf-restaurants {
-    padding:0 1.5em;
+    padding: 0 1.5em;
 }
 
 .omf-restaurants {
-    padding-bottom: 2em;
     margin: 0;
 }
 
@@ -35,6 +40,7 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 2em;
+
     @media only screen and (width > map-get($breakpoints, tablets)) {
         flex-direction: row;
         flex-wrap: wrap;
