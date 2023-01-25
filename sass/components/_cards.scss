@@ -7,6 +7,13 @@
     border-radius: 2em;
     background: $colour-white;
 
+    &__link {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 2em;
+    }
+
     &__img {
         height: 70%;
         width: 100%;
