@@ -1,3 +1,6 @@
+.omf-wrapper{
+    box-shadow: 0 0.3em 0.8em darker-shift($colour-lightgrey, 'shadow');
+}
 .omf-search,
 .omf-restaurants {
     background: $colour-lightgrey;

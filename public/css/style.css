@@ -4,7 +4,7 @@
 
 body {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -46,9 +46,9 @@ footer > h2 {
   font-weight: 400;
 }
 
-h2 {
+h1, h2 {
   margin-top: 0;
-  padding-top: 1em;
+  padding-top: 1rem;
 }
 
 footer {
@@ -127,6 +127,10 @@ input {
   .omf-homecard {
     flex: 40%;
   }
+}
+
+.omf-wrapper {
+  box-shadow: 0 0.3em 0.8em #bebebe;
 }
 
 .omf-search,
