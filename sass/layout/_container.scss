@@ -8,16 +8,16 @@
 }
 
 .omf-search,
-.omf-restaurants {
+.omf-restaurants-list {
     background: $color-lightgrey;
 }
 
 .omf-howto,
-.omf-restaurants {
+.omf-restaurants-list {
     padding: 3em 1.5em 4em 1.5em;
 }
 
-.omf-restaurants {
+.omf-restaurants-list {
     margin: 0;
 }
 
@@ -34,7 +34,7 @@
     }
 }
 
-.omf-restaurants__cards {
+.omf-restaurants-list__cards {
     width: 100%;
     position: relative;
     display: flex;
