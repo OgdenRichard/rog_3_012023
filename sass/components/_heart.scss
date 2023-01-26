@@ -4,10 +4,11 @@
     position: relative;
     width: $heart-size;
     height: $heart-size;
-    transform: rotate(-45deg);
+    flex-shrink: 0;
     border: $heart-border solid $colour-darkgrey;
     border-top-color: transparent;
     border-right-color: transparent;
+    transform: rotate(-45deg);
     z-index: 1;
 
     &:hover {
