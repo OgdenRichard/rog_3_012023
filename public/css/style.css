@@ -138,17 +138,15 @@ input {
 }
 .omf-homecard__info {
   position: relative;
-  padding-left: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
 }
-.omf-homecard__info .omf-heart {
-  position: absolute;
-  top: 2em;
-  right: 2em;
-}
-.omf-homecard__info > h3 {
+.omf-homecard__info h3 {
   margin: 0.75em 0 0.5em 0;
 }
-.omf-homecard__info > p {
+.omf-homecard__info p {
   margin: 0.5em 0 0 0;
 }
 @media only screen and (width > 768px) {
