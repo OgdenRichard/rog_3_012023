@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .omf-heart {
     position: relative;
     width: $heart-size;
@@ -33,14 +35,14 @@
     }
 
     &::before {
-        top: -$heart-size/2;
+        top: -(math.div($heart-size,2));
         left: -$heart-border;
         transform: rotate(45deg);
     }
 
     &::after {
         top: -$heart-border;
-        left: $heart-size/2 - $heart-border*2;
+        left: math.div($heart-size,2) - $heart-border*2;
         transform: rotate(135deg);
     }
 }
