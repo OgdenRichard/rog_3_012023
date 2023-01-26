@@ -1,10 +1,24 @@
 .omf-wrapper {
     box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
+    background: transparent;
 
     article,
     section {
         padding-bottom: 4em;
     }
+}
+
+// TODO : reset transparent elements
+
+.omf-restaurant-img {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-attachment: fixed;
+
 }
 
 .omf-search,
@@ -46,4 +60,12 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+}
+
+.omf-restaurant {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.5em;
+    border-radius: 3em 3em 0 0;
+    background: $color-lightgrey;
 }
