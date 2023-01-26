@@ -8,14 +8,14 @@
     gap: 1.5em;
     padding: 1.5em 0;
     border-radius: 1.5em;
-    background: lighten($colour-lightgrey, 1%);
+    background: lighten($color-lightgrey, 1%);
     text-align: center;
-    box-shadow: 0 0.3em 0.8em darker-shift($colour-lightgrey, 'shadow');
+    box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
 
     >i {
         display: block;
         padding-left: 2em;
-        color: darken($colour-lightgrey, 25%);
+        color: darken($color-lightgrey, 25%);
     }
 
     >p {
@@ -30,15 +30,15 @@
         position: absolute;
         left: -1em;
         border-radius: 1em;
-        background: $colour-primary;
+        background: $color-primary;
         text-align: center;
-        color: $colour-white;
+        color: $color-white;
     }
 
     &:hover {
-        background: lighten($colour-primary, 35%);
+        background: lighten($color-primary, 35%);
         >i{
-            color: $colour-primary;
+            color: $color-primary;
         }
     }
 }

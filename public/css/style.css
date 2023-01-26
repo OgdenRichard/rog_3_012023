@@ -108,6 +108,7 @@ input {
   flex-direction: column;
   border-radius: 2em;
   background: #fff;
+  box-shadow: 0 0.3em 0.8em #cccccc;
 }
 .omf-homecard__link {
   position: absolute;

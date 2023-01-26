@@ -5,19 +5,19 @@
     width: $heart-size;
     height: $heart-size;
     flex-shrink: 0;
-    border: $heart-border solid $colour-darkgrey;
+    border: $heart-border solid $color-darkgrey;
     border-top-color: transparent;
     border-right-color: transparent;
     transform: rotate(-45deg);
     z-index: 1;
 
     &:hover {
-        background: $colour-primary;
+        background: $color-primary;
         border-bottom-color: transparent;
         border-left-color: transparent; 
         &::before,
         &::after {
-            background: $colour-primary;
+            background: $color-primary;
             border-top-color: transparent;
             border-left-color: transparent;          
         }
@@ -30,7 +30,7 @@
         height: 100%;
         content: '';
         border-radius: 50%;
-        border: $heart-border solid $colour-darkgrey;
+        border: $heart-border solid $color-darkgrey;
         border-bottom-color: transparent;
         border-right-color: transparent;
     }

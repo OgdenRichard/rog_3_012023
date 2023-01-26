@@ -1,5 +1,5 @@
 .omf-wrapper {
-    box-shadow: 0 0.3em 0.8em darker-shift($colour-lightgrey, 'shadow');
+    box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
 
     article,
     section {
@@ -9,7 +9,7 @@
 
 .omf-search,
 .omf-restaurants {
-    background: $colour-lightgrey;
+    background: $color-lightgrey;
 }
 
 .omf-howto,
