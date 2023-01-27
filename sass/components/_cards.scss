@@ -60,3 +60,41 @@
     }
 }
 
+.omf-menu {
+    display: flex;
+    flex-direction: column;
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+.omf-dish-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1em;
+    background: $color-white;
+    padding: 0.75em 1em;
+
+    &__info {
+        >h4 {
+            padding-bottom: 0.3em;
+        }
+
+        >h4,
+        >p {
+            margin: 0;
+        }
+    }
+
+    &__price {
+        padding-top: 1.5em;
+
+        >p {
+            margin: 0;
+        }
+    }
+}

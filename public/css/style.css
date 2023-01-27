@@ -156,6 +156,38 @@ input {
   }
 }
 
+.omf-menu {
+  display: flex;
+  flex-direction: column;
+}
+.omf-menu__category {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.omf-dish-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1em;
+  background: #fff;
+  padding: 0.75em 1em;
+}
+.omf-dish-card__info > h4 {
+  padding-bottom: 0.3em;
+}
+.omf-dish-card__info > h4,
+.omf-dish-card__info > p {
+  margin: 0;
+}
+.omf-dish-card__price {
+  padding-top: 1.5em;
+}
+.omf-dish-card__price > p {
+  margin: 0;
+}
+
 .omf-heart {
   position: relative;
   width: 20px;
