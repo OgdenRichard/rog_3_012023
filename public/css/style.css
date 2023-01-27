@@ -172,7 +172,11 @@ input {
   justify-content: space-between;
   border-radius: 1em;
   background: #fff;
+  box-shadow: 0 0.3em 0.8em #bebebe;
   padding: 0.75em 1em;
+}
+.omf-dish-card__info {
+  width: 90%;
 }
 .omf-dish-card__info > h4 {
   padding-bottom: 0.3em;
@@ -180,12 +184,16 @@ input {
 .omf-dish-card__info > h4,
 .omf-dish-card__info > p {
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .omf-dish-card__price {
   padding-top: 1.5em;
 }
 .omf-dish-card__price > p {
   margin: 0;
+  font-weight: 600;
 }
 
 .omf-heart {

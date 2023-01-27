@@ -77,9 +77,12 @@
     justify-content: space-between;
     border-radius: 1em;
     background: $color-white;
+    box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
     padding: 0.75em 1em;
 
     &__info {
+        width: 90%;
+
         >h4 {
             padding-bottom: 0.3em;
         }
@@ -87,6 +90,9 @@
         >h4,
         >p {
             margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
 
@@ -95,6 +101,7 @@
 
         >p {
             margin: 0;
+            font-weight: 600;
         }
     }
 }
