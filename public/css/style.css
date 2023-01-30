@@ -132,9 +132,6 @@ input {
   box-shadow: 0 0.3em 0.8em #cccccc;
 }
 .omf-homecard__link {
-  position: absolute;
-  height: 100%;
-  width: 100%;
   border-radius: 2em;
 }
 .omf-homecard__img {
@@ -249,6 +246,12 @@ input {
   transform: rotate(135deg);
 }
 
+.omf-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .omf-wrapper {
   box-shadow: 0 0.3em 0.8em #bebebe;
 }
@@ -256,9 +259,6 @@ input {
 .omf-header {
   position: relative;
   text-align: center;
-  /*     display: flex;
-      align-items: center;
-      justify-content: space-around; */
 }
 .omf-header__breadcrumb {
   position: absolute;
