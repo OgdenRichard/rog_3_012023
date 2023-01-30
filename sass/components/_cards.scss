@@ -60,29 +60,6 @@
     }
 }
 
-.omf-menu {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    @media only screen and (width > map-get($breakpoints, tablets)) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2em;
-    }
-
-
-    &__category {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-
-        @media only screen and (width > map-get($breakpoints, tablets)) {
-            flex: 1 0 25%;
-        }
-    }
-}
-
 .omf-dish-card {
     width: 100%;
     display: flex;

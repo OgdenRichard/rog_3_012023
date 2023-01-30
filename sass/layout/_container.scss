@@ -2,9 +2,6 @@
     box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
 
     // TODO : gestion padding bottom + left-right à revoir
-    article {
-        padding-bottom: 4em;
-    }
 }
 
 // TODO : reset transparent elements
@@ -12,6 +9,10 @@
 .omf-search,
 .omf-restaurants-list {
     background: $color-lightgrey;
+}
+
+.omf-search {
+    padding-bottom: 3em;
 }
 
 .omf-howto,
@@ -59,7 +60,7 @@
 .omf-restaurant-wrapper {
     position: relative;
     margin-top: 15em;
-    padding: 1em 1.5em;
+    padding: 1em 1.5em 4em 1.5em;
     border-radius: 3em 3em 0 0;
     background: $color-lightgrey;
 }
@@ -72,6 +73,30 @@
     padding: 0;
     margin: 0;
     z-index: -1;
+}
+
+.omf-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    @media only screen and (width > map-get($breakpoints, tablets)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        @media only screen and (width > map-get($breakpoints, tablets)) {
+            flex: 1 0 25%;
+        }
+    }
 }
 
 .omf-category-title {
