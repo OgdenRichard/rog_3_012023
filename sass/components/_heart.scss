@@ -14,12 +14,13 @@
     &:hover {
         background: $color-primary;
         border-bottom-color: transparent;
-        border-left-color: transparent; 
+        border-left-color: transparent;
+
         &::before,
         &::after {
             background: $color-primary;
             border-top-color: transparent;
-            border-left-color: transparent;          
+            border-left-color: transparent;
         }
     }
 
@@ -36,14 +37,14 @@
     }
 
     &::before {
-        top: -(math.div($heart-size,2));
+        top: -(math.div($heart-size, 2));
         left: -$heart-border;
         transform: rotate(45deg);
     }
 
     &::after {
         top: -$heart-border;
-        left: math.div($heart-size,2) - $heart-border*2;
+        left: math.div($heart-size, 2) - $heart-border*2;
         transform: rotate(135deg);
     }
 }

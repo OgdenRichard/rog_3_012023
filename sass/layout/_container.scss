@@ -13,6 +13,11 @@
         top: 2em;
         left: 2em;
         z-index: 1;
+        color: lighten($color-darkgrey, 10%);
+
+        @media only screen and (width <=map-get($breakpoints, mobile)) {
+            left: 1em;
+        }
     }
 }
 
@@ -83,6 +88,18 @@
     padding: 0;
     margin: 0;
     z-index: -1;
+}
+
+.omf-restaurant__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.75em;
+    padding-bottom: 2em;
+
+    >div {
+        margin-left: 1em;
+    }
 }
 
 .omf-menu {
