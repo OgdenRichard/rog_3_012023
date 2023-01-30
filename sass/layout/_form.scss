@@ -14,8 +14,7 @@
         font-weight: 500;
     }
 
-    &__input-text-wrapper>input,
-    &__submit {
+    &__input-text-wrapper>input {
         height: 3em;
         padding: 0 1.5em;
         outline: none;
@@ -42,14 +41,6 @@
             color: lighten($color-darkgrey, 10%);
         }
     }
+
     // TODO : map et boucle pour gérer les ombres portées ?
-
-    &__submit {
-        border-radius: 2em;
-        color: $color-white;
-        background-image: linear-gradient($color-secondary, $color-primary);
-        box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
-    }
-
-    // TODO : composant séparé pour submit button
 }

@@ -106,6 +106,18 @@ input {
   color: #9356DC;
 }
 
+.omf-button {
+  height: 3em;
+  padding: 0 1.5em;
+  border: transparent;
+  outline: none;
+  border-radius: 2em;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0.3em 0.8em #bebebe;
+}
+
 .omf-homecard {
   height: 245px;
   margin: 0;
@@ -355,7 +367,7 @@ input {
   margin: 0.5em 0 2em 0;
   font-weight: 500;
 }
-.form__input-text-wrapper > input, .form__submit {
+.form__input-text-wrapper > input {
   height: 3em;
   padding: 0 1.5em;
   outline: none;
@@ -378,12 +390,6 @@ input {
 .form__input-text-wrapper > i,
 .form__input-text-wrapper > input {
   color: #464646;
-}
-.form__submit {
-  border-radius: 2em;
-  color: #fff;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 0.3em 0.8em #bebebe;
 }
 
 .omf-footer__list li {
