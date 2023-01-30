@@ -1,6 +1,7 @@
 .omf-wrapper {
     box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
-// TODO : gestion padding bottom + left-right à revoir
+
+    // TODO : gestion padding bottom + left-right à revoir
     article {
         padding-bottom: 4em;
     }
@@ -71,4 +72,17 @@
     padding: 0;
     margin: 0;
     z-index: -1;
+}
+
+.omf-category-title {
+    >h3 {
+        margin: 0;
+    }
+}
+
+.underline {
+    width: 3.125em;
+    margin: 0.5em 0 1em 0;
+    padding: 0;
+    border-top: 3px solid $color-tertiary;
 }

@@ -10,7 +10,8 @@ footer>h2 {
     font-weight: 400;
 }
 
-h1,h2 {
+h1,
+h2 {
     margin-top: 0;
     padding-top: 1rem;
 }
@@ -21,4 +22,11 @@ footer {
 
 input {
     font-weight: 550;
+}
+
+.omf-category-title {
+    >h3 {
+        font-weight: 200;
+        color: lighten($color-darkgrey, 20%);
+    }
 }
