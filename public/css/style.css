@@ -8,10 +8,6 @@ body {
   margin: auto;
 }
 
-header {
-  text-align: center;
-}
-
 article {
   padding-bottom: 4em;
 }
@@ -255,6 +251,20 @@ input {
 
 .omf-wrapper {
   box-shadow: 0 0.3em 0.8em #bebebe;
+}
+
+.omf-header {
+  position: relative;
+  text-align: center;
+  /*     display: flex;
+      align-items: center;
+      justify-content: space-around; */
+}
+.omf-header__breadcrumb {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  z-index: 1;
 }
 
 .omf-search,

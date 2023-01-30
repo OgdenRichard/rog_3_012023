@@ -4,7 +4,20 @@
     // TODO : gestion padding bottom + left-right à revoir
 }
 
-// TODO : reset transparent elements
+.omf-header {
+    position: relative;
+    text-align: center;
+/*     display: flex;
+    align-items: center;
+    justify-content: space-around; */
+
+    &__breadcrumb {
+        position: absolute;
+        top:2em;
+        left: 2em;
+        z-index: 1;
+    }
+}
 
 .omf-search,
 .omf-restaurants-list {
