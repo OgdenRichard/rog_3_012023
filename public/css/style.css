@@ -108,13 +108,16 @@ input {
 
 .omf-button {
   height: 3em;
+  width: 15.625em;
   padding: 0 1.5em;
   border: transparent;
-  outline: none;
   border-radius: 2em;
   background-image: linear-gradient(#FF79DA, #9356DC);
   text-align: center;
+  font-size: 1em;
+  font-weight: 500;
   color: #fff;
+  outline: none;
   box-shadow: 0 0.3em 0.8em #bebebe;
 }
 
@@ -351,6 +354,13 @@ input {
   margin: 0.5em 0 1em 0;
   padding: 0;
   border-top: 3px solid #99E2D0;
+}
+
+.omf-restaurant__order {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form {
