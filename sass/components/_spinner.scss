@@ -4,34 +4,7 @@
     width: 100%;
     z-index: -3;
     background: transparent;
-    animation: spinner-container 3300ms;
-}
-
-
-@keyframes rotate {
-
-    0%,
-    33.33% {
-        transform: rotate(0deg) translate(-25px) rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg) translate(-25px) rotate(-360deg);
-    }
-}
-
-@keyframes color {
-    0% {
-        background: $color-primary;
-    }
-
-    33.33% {
-        background: rgba($color-primary, .50);
-    }
-
-    100% {
-        background: $color-primary;
-    }
+    animation: spinner-container-fadeout 3300ms;
 }
 
 .circle {
@@ -49,53 +22,35 @@
 
 .circle-1 {
     opacity: .3;
-    animation: rotate 3s infinite ease-in, color 3s infinite ease-in;
+    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
 }
 
 .circle-2 {
     opacity: .4;
-    animation: rotate 3s infinite ease-in, color 3s infinite ease-in;
+    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
     animation-delay: -.25s;
 }
 
 .circle-3 {
     opacity: .5;
-    animation: rotate 3s infinite ease-in, color 3s infinite ease-in;
+    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
     animation-delay: -.5s;
 }
 
 .circle-4 {
     opacity: .6;
-    animation: rotate 3s infinite ease-in, color 3s infinite ease-in;
+    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
     animation-delay: -.75s;
 }
 
 .circle-5 {
     opacity: .7;
-    animation: rotate 3s infinite ease-in, color 3s infinite ease-in;
+    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
     animation-delay: -1s;
 }
 
 .circle-6 {
     opacity: .8;
-    animation: rotate 3s infinite ease-in, color 3s infinite ease-in;
+    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
     animation-delay: -1.25s;
-}
-
-@keyframes spinner-container {
-    0% {
-        background: $color-lightgrey;
-        z-index: 2;
-        opacity: .90;
-    }
-
-    90% {
-        opacity: .90;
-        background: $color-lightgrey;
-    }
-
-    100% {
-        z-index: 2;
-        opacity: 0;
-    }
 }
