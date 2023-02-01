@@ -256,7 +256,32 @@ input {
   width: 100%;
 }
 
+.omf-spinner-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  background: transparent;
+  animation: spinner-container 3300ms;
+}
+
+@keyframes spinner-container {
+  0% {
+    background: #f1f1f1;
+    z-index: 2;
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.9;
+    background: #f1f1f1;
+  }
+  100% {
+    z-index: 2;
+    opacity: 0;
+  }
+}
 .omf-wrapper {
+  position: relative;
   box-shadow: 0 0.3em 0.8em #bebebe;
 }
 
