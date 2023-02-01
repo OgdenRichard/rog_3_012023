@@ -108,7 +108,7 @@
     flex-direction: column;
     padding-bottom: 0;
 
-    @media only screen and (width > map-get($breakpoints, tablets)) {
+    @media only screen and (width > map-get($breakpoints, tablets_L)) {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 2em;
@@ -120,8 +120,8 @@
         flex-direction: column;
         gap: 1em;
 
-        @media only screen and (width > map-get($breakpoints, tablets)) {
-            flex: 1 0 25%;
+        @media only screen and (width > map-get($breakpoints, tablets_L)) {
+            flex: 25%;
         }
     }
 }

@@ -4,7 +4,7 @@
 
 body {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1980px;
   margin: auto;
 }
 
@@ -364,7 +364,7 @@ input {
   flex-direction: column;
   padding-bottom: 0;
 }
-@media only screen and (width > 768px) {
+@media only screen and (width > 972px) {
   .omf-menu {
     flex-direction: row;
     flex-wrap: wrap;
@@ -376,9 +376,9 @@ input {
   flex-direction: column;
   gap: 1em;
 }
-@media only screen and (width > 768px) {
+@media only screen and (width > 972px) {
   .omf-menu__category {
-    flex: 1 0 25%;
+    flex: 25%;
   }
 }
 
