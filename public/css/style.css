@@ -308,6 +308,7 @@ input {
   margin: -20px 0 0 -20px;
   border-radius: 40px;
   background: #fff;
+  text-align: center;
   box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
   transform: translate(-50%, -50%);
 }
@@ -381,6 +382,10 @@ input {
 .omf-howto,
 .omf-restaurants-list {
   padding: 3em 1.5em 4em 1.5em;
+}
+
+.omf-howto {
+  background: #fff;
 }
 
 .omf-restaurants-list {
