@@ -180,12 +180,12 @@ input {
 
 .omf-dish-card {
   width: 100%;
+  padding: 0.75em 1em;
   display: flex;
   justify-content: space-between;
   border-radius: 1em;
   background: #fff;
   box-shadow: 0 0.3em 0.8em #bebebe;
-  padding: 0.75em 1em;
 }
 .omf-dish-card__info {
   width: 90%;
@@ -364,7 +364,7 @@ input {
   flex-direction: column;
   padding-bottom: 0;
 }
-@media only screen and (width > 972px) {
+@media only screen and (width >= 1140px) {
   .omf-menu {
     flex-direction: row;
     flex-wrap: wrap;
@@ -376,7 +376,7 @@ input {
   flex-direction: column;
   gap: 1em;
 }
-@media only screen and (width > 972px) {
+@media only screen and (width > 1140px) {
   .omf-menu__category {
     flex: 25%;
   }

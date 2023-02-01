@@ -59,12 +59,12 @@
 
 .omf-dish-card {
     width: 100%;
+    padding: 0.75em 1em;
     display: flex;
     justify-content: space-between;
     border-radius: 1em;
     background: $color-white;
     box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
-    padding: 0.75em 1em;
 
     &__info {
         width: 90%;
