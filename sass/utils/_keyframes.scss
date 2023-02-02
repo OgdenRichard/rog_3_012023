@@ -1,10 +1,15 @@
 @keyframes dish_card_fadein {
-    from {
+    0% {
         opacity: 0;
-        transform:translate(0,2em);
+        transform: translate(0, 1.5em);
     }
 
-    to {
+    75% {
         opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
