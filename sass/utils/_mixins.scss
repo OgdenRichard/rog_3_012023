@@ -1,0 +1,14 @@
+@use "sass:math";
+
+@mixin cards_delay($nb_cards: 5) {
+    $initial_delay: math.div(map-get($durations, card_fadein), 10);
+    $delay: 0;
+
+    @for $i from 3 through $nb_cards {
+        $delay: $delay+$initial_delay;
+
+        &:nth-of-type(#{$i}) {
+            animation-delay: #{$delay}ms;
+        }
+    }
+}

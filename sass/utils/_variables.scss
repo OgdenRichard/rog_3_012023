@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -9,3 +11,5 @@ $heart-size : 20px;
 $heart-border : 2px;
 
 $breakpoints : (mobile:480px, tablets:768px, tablets_L:972px, desktop_S:1140px);
+
+$durations : (spinner_cycle:3000, card_fadein:2000);
