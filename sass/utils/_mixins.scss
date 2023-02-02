@@ -1,0 +1,16 @@
+@use "sass:math";
+
+@mixin spinner_styling($nb_elements: 6, $initial_delay: 250, $opacity: .3) {
+    $delay: $initial_delay;
+
+    @for $i from 1 through $nb_elements {
+
+        &:nth-of-type(#{$i}) {
+            opacity: $opacity;
+            animation-delay: #{-$delay}ms;
+        }
+
+        $opacity: $opacity+.1;
+        $delay: $delay+$initial_delay;
+    }
+}

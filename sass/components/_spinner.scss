@@ -17,39 +17,10 @@
         background: #fff;
         box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
         transform: translate(-50%, -50%);
-        animation: spinner_rotate $cycle_duration infinite ease-in, spinner_color $cycle_duration infinite ease-in;
+        animation: spinner_rotate #{map-get($durations, spinner_cycle)}ms infinite ease-in,
+        spinner_color #{map-get($durations, spinner_cycle)}ms infinite ease-in;
+        @include spinner_styling;
     }
 }
 
 // TODO : fonction variation taille et espacement
-
-// TODO : for loop + nth child
-
-.circle-1 {
-    opacity: .3;
-}
-
-.circle-2 {
-    opacity: .4;
-    animation-delay: -.25s;
-}
-
-.circle-3 {
-    opacity: .5;
-    animation-delay: -.5s;
-}
-
-.circle-4 {
-    opacity: .6;
-    animation-delay: -.75s;
-}
-
-.circle-5 {
-    opacity: .7;
-    animation-delay: -1s;
-}
-
-.circle-6 {
-    opacity: .8;
-    animation-delay: -1.25s;
-}
