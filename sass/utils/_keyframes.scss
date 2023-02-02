@@ -1,4 +1,4 @@
-@keyframes spinner-container-fadeout {
+@keyframes spinner_fadeout {
     0% {
         background: $color-lightgrey;
         z-index: 2;
@@ -16,7 +16,7 @@
     }
 }
 
-@keyframes omf-spinner-color {
+@keyframes spinner_color {
     0% {
         background: $color-primary;
     }
@@ -30,7 +30,7 @@
     }
 }
 
-@keyframes omf-spinner-rotate {
+@keyframes spinner_rotate {
 
     0%,
     33.33% {

@@ -1,57 +1,56 @@
-.omf-spinner-container {
+.omf-spinner {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -3;
     background: transparent;
-    animation: spinner-container-fadeout 3300ms;
-}
+    animation: spinner_fadeout 3300ms;
 
-.circle {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin: -20px 0 0 -20px;
-    border-radius: 40px;
-    background: #fff;
-    text-align: center;
-    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
-    transform: translate(-50%, -50%);
+    &__circle {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin: -20px 0 0 -20px;
+        border-radius: 40px;
+        background: #fff;
+        box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
+        transform: translate(-50%, -50%);
+    }
 }
 
 .circle-1 {
     opacity: .3;
-    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
+    animation: spinner_rotate $cycle_duration infinite ease-in, spinner_color $cycle_duration infinite ease-in;
 }
 
 .circle-2 {
     opacity: .4;
-    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
+    animation: spinner_rotate $cycle_duration infinite ease-in, spinner_color $cycle_duration infinite ease-in;
     animation-delay: -.25s;
 }
 
 .circle-3 {
     opacity: .5;
-    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
+    animation: spinner_rotate $cycle_duration infinite ease-in, spinner_color $cycle_duration infinite ease-in;
     animation-delay: -.5s;
 }
 
 .circle-4 {
     opacity: .6;
-    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
+    animation: spinner_rotate $cycle_duration infinite ease-in, spinner_color $cycle_duration infinite ease-in;
     animation-delay: -.75s;
 }
 
 .circle-5 {
     opacity: .7;
-    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
+    animation: spinner_rotate $cycle_duration infinite ease-in, spinner_color $cycle_duration infinite ease-in;
     animation-delay: -1s;
 }
 
 .circle-6 {
     opacity: .8;
-    animation: omf-spinner-rotate $cycle_duration infinite ease-in, omf-spinner-color $cycle_duration infinite ease-in;
+    animation: spinner_rotate $cycle_duration infinite ease-in, spinner_color $cycle_duration infinite ease-in;
     animation-delay: -1.25s;
 }
