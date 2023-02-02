@@ -65,6 +65,7 @@
     border-radius: 1em;
     background: $color-white;
     box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
+    animation: dish_card_fadein 2s 1 ease-out;
 
     &__info {
         width: 90%;

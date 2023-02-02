@@ -1,3 +1,12 @@
+@keyframes dish_card_fadein {
+  from {
+    opacity: 0;
+    transform: translate(0, 2em);
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -186,6 +195,7 @@ input {
   border-radius: 1em;
   background: #fff;
   box-shadow: 0 0.3em 0.8em #bebebe;
+  animation: dish_card_fadein 2s 1 ease-out;
 }
 .omf-dish-card__info {
   width: 90%;
