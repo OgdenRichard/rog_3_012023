@@ -196,6 +196,10 @@ input {
   background: #fff;
   box-shadow: 0 0.3em 0.8em #bebebe;
   animation: dish_card_fadein 2s 1 ease-out;
+  animation-fill-mode: backwards;
+}
+.omf-dish-card:nth-of-type(3) {
+  animation-delay: 300ms;
 }
 .omf-dish-card__info {
   width: 90%;
