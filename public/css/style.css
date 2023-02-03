@@ -198,6 +198,7 @@ input {
   display: flex;
   justify-content: space-between;
   border-radius: 1em;
+  overflow: hidden;
   background: #fff;
   box-shadow: 0 0.3em 0.8em #bebebe;
   animation: dish_card_fadein 1500ms 1 ease-out;
@@ -213,7 +214,7 @@ input {
   animation-delay: 600ms;
 }
 .omf-dish-card__info {
-  width: 70%;
+  width: 90%;
   padding: 0.75em;
 }
 .omf-dish-card__info > h4 {
@@ -227,19 +228,23 @@ input {
   white-space: nowrap;
 }
 .omf-dish-card__price {
+  width: 10%;
   padding-top: 2.15em;
-  padding-right: 0.5em;
+  padding-right: 1em;
+  margin-right: 50px;
 }
 .omf-dish-card__price > p {
   margin: 0;
   font-weight: 600;
 }
 .omf-dish-card__checked {
-  width: 25%;
+  width: 60px;
   height: inherit;
+  margin-left: 100px;
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
   background: #99E2D0;
+  transform-origin: left;
 }
 .omf-dish-card__checked::after {
   display: block;
