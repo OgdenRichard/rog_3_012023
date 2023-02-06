@@ -253,36 +253,28 @@ input {
   font-size: 2em;
   text-align: center;
 }
-.omf-dish-card:hover .omf-dish-card-check__checked {
-  width: 60px;
-}
-.omf-dish-card:hover .omf-dish-card-check__checked::after {
-  -webkit-transform: rotate(175deg);
-  transform: rotate(360deg);
-}
-
-.omf-dish-card-check {
+.omf-dish-card__check {
   display: flex;
 }
-.omf-dish-card-check__price {
+.omf-dish-card__check > .omf-price {
   padding-top: 2.15em;
   padding-right: 1em;
 }
-.omf-dish-card-check__price > p {
+.omf-dish-card__check > .omf-price > p {
   margin: 0;
   font-weight: 600;
 }
-.omf-dish-card-check__checked {
+.omf-dish-card__check > .omf-checked {
   width: 0px;
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
   background: #99E2D0;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.omf-dish-card-check__checked > i {
+.omf-dish-card__check > .omf-checked > i {
   font-weight: 600;
 }
-.omf-dish-card-check__checked::after {
+.omf-dish-card__check > .omf-checked::after {
   display: inline-block;
   padding: 0.5em;
   content: "\f058";
@@ -293,8 +285,14 @@ input {
   line-height: 1.75em;
   text-align: center;
   vertical-align: bottom;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: rotate(-360deg);
+}
+.omf-dish-card:hover .omf-checked {
+  width: 60px;
+}
+.omf-dish-card:hover .omf-checked::after {
+  transform: rotate(360deg);
 }
 
 .omf-heart {
