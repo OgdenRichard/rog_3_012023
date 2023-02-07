@@ -32,6 +32,19 @@
     transform: rotate(360deg) translate(-25px) rotate(-360deg);
   }
 }
+@keyframes dish_card_fadein {
+  0% {
+    opacity: 0;
+    transform: translate(0, 1.5em);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -214,15 +227,30 @@ input {
 
 .omf-dish-card {
   width: 100%;
-  padding: 0.75em 1em;
+  position: relative;
+  padding-left: 1em;
   display: flex;
   justify-content: space-between;
   border-radius: 1em;
+  overflow: hidden;
   background: #fff;
   box-shadow: 0 0.3em 0.8em #bebebe;
+  animation: dish_card_fadein 1500ms 1 ease-out;
+  animation-fill-mode: backwards;
+}
+.omf-dish-card:nth-of-type(3) {
+  animation-delay: 200ms;
+}
+.omf-dish-card:nth-of-type(4) {
+  animation-delay: 400ms;
+}
+.omf-dish-card:nth-of-type(5) {
+  animation-delay: 600ms;
 }
 .omf-dish-card__info {
-  width: 90%;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.75em;
 }
 .omf-dish-card__info > h4 {
   padding-bottom: 0.3em;
@@ -234,12 +262,46 @@ input {
   overflow: hidden;
   white-space: nowrap;
 }
-.omf-dish-card__price {
-  padding-top: 1.5em;
+.omf-dish-card__check {
+  display: flex;
 }
-.omf-dish-card__price > p {
+.omf-dish-card__check > .omf-price {
+  padding-top: 2.15em;
+  padding-right: 1em;
+}
+.omf-dish-card__check > .omf-price > p {
   margin: 0;
   font-weight: 600;
+}
+.omf-dish-card__check > .omf-checked {
+  width: 0px;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  background: #99E2D0;
+  transition: all 0.5s ease-in-out;
+}
+.omf-dish-card__check > .omf-checked > i {
+  font-weight: 600;
+}
+.omf-dish-card__check > .omf-checked::after {
+  display: inline-block;
+  padding: 0.5em;
+  content: "\f058";
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 1.75em;
+  line-height: 1.75em;
+  text-align: center;
+  vertical-align: bottom;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-360deg);
+}
+.omf-dish-card:hover .omf-checked {
+  width: 60px;
+}
+.omf-dish-card:hover .omf-checked::after {
+  transform: rotate(360deg);
 }
 
 .omf-heart {

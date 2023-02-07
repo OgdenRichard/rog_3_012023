@@ -39,6 +39,9 @@
 
     100% {
         transform: rotate(360deg) translate(-25px) rotate(-360deg);
+    }
+}
+
 @keyframes dish_card_fadein {
     0% {
         opacity: 0;
