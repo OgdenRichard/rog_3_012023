@@ -1,4 +1,5 @@
 .omf-wrapper {
+    position: relative;
     box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
 
     // TODO : gestion padding bottom + left-right à revoir
@@ -33,6 +34,10 @@
 .omf-howto,
 .omf-restaurants-list {
     padding: 3em 1.5em 4em 1.5em;
+}
+
+.omf-howto{
+    background: $color-white;
 }
 
 .omf-restaurants-list {

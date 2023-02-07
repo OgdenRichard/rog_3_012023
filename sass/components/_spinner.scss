@@ -1,0 +1,26 @@
+.omf-spinner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    background: transparent;
+    animation: spinner_fadeout 3300ms;
+
+    &__circle {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin: -20px 0 0 -20px;
+        border-radius: 40px;
+        background: #fff;
+        box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
+        transform: translate(-50%, -50%);
+        animation: spinner_rotate #{map-get($durations, spinner_cycle)}ms infinite ease-in,
+        spinner_color #{map-get($durations, spinner_cycle)}ms infinite ease-in;
+        @include spinner_styling;
+    }
+}
+
+// TODO : fonction variation taille et espacement
