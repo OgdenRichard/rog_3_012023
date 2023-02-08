@@ -10,10 +10,11 @@
     }
 
     @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+        padding-bottom: 3em;
+
         >li {
             display: inline-block;
-            line-height: 1em;
-            padding: 2em;
+            padding-right: 2em;
         }
 
         i {

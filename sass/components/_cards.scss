@@ -64,13 +64,14 @@
         &__info {
             padding: 1em 1.5em;
         }
+
     }
 }
 
 .omf-dish-card {
     width: 100%;
     position: relative;
-    padding-left: 1em;
+    padding-left: 1.5em;
     display: flex;
     justify-content: space-between;
     border-radius: 1em;
@@ -82,13 +83,12 @@
     @include cards_delay;
 
     &__info {
-        //width: 75%;
         flex: 1 1 0;
         min-width: 0;
-        padding: 0.75em;
+        padding: 0.5em 0;
 
         >h4 {
-            padding-bottom: 0.3em;
+            padding:0.75em 0 0.3em 0;
         }
 
         >h4,
@@ -104,7 +104,7 @@
         display: flex;
 
         >.omf-price {
-            padding-top: 2.15em;
+            padding-top: 2.75em;
             padding-right: 1em;
 
             >p {

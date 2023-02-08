@@ -249,7 +249,7 @@ input {
 .omf-dish-card {
   width: 100%;
   position: relative;
-  padding-left: 1em;
+  padding-left: 1.5em;
   display: flex;
   justify-content: space-between;
   border-radius: 1em;
@@ -271,10 +271,10 @@ input {
 .omf-dish-card__info {
   flex: 1 1 0;
   min-width: 0;
-  padding: 0.75em;
+  padding: 0.5em 0;
 }
 .omf-dish-card__info > h4 {
-  padding-bottom: 0.3em;
+  padding: 0.75em 0 0.3em 0;
 }
 .omf-dish-card__info > h4,
 .omf-dish-card__info > p {
@@ -287,7 +287,7 @@ input {
   display: flex;
 }
 .omf-dish-card__check > .omf-price {
-  padding-top: 2.15em;
+  padding-top: 2.75em;
   padding-right: 1em;
 }
 .omf-dish-card__check > .omf-price > p {
@@ -621,10 +621,12 @@ input {
   margin-right: 1em;
 }
 @media only screen and (width >= 1140px) {
+  .omf-footer__list {
+    padding-bottom: 3em;
+  }
   .omf-footer__list > li {
     display: inline-block;
-    line-height: 1em;
-    padding: 2em;
+    padding-right: 2em;
   }
   .omf-footer__list i {
     margin-right: 0.75em;
