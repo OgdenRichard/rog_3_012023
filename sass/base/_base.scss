@@ -15,6 +15,12 @@ article {
 footer {
     background: $color-darkgrey;
     padding: 0 1.5em;
+
+    @media only screen and (width >= map-get($breakpoints, desktop_S)) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 ul {

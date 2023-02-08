@@ -1,10 +1,23 @@
 .omf-footer__list {
-    li{
+    li {
         line-height: 2em;
     }
+
     i {
         display: inline-block;
         width: 1em;
         margin-right: 1em;
+    }
+
+    @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+        >li {
+            display: inline-block;
+            line-height: 1em;
+            padding: 2em;
+        }
+
+        i {
+            margin-right: 0.75em;
+        }
     }
 }
