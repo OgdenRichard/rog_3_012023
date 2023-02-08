@@ -173,7 +173,7 @@ input {
 }
 
 .omf-homecard {
-  height: 245px;
+  height: 260px;
   margin: 0;
   position: relative;
   display: flex;
@@ -459,7 +459,7 @@ input {
 .omf-restaurants-list__cards {
   width: 100%;
   display: flex;
-  padding: 2em 1.5em;
+  padding: 2em 0;
   flex-direction: column;
   justify-content: space-around;
   gap: 2em;
