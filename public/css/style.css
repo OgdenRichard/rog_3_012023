@@ -224,6 +224,15 @@ input {
     flex: 40%;
   }
 }
+@media only screen and (width > 1440px) {
+  .omf-homecard {
+    height: 350px;
+    max-width: 800px;
+  }
+  .omf-homecard__info {
+    padding: 1em 1.5em;
+  }
+}
 
 .omf-dish-card {
   width: 100%;

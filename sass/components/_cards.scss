@@ -1,5 +1,6 @@
 .omf-homecard {
     height: 260px;
+    //max-width: 680px;
     margin: 0;
     position: relative;
     display: flex;
@@ -54,6 +55,15 @@
 
     @media only screen and (width > map-get($breakpoints, tablets)) {
         flex: 40%;
+    }
+
+    @media only screen and (width > map-get($breakpoints, desktop_L)) {
+        height: 350px;
+        max-width: 800px;
+
+        &__info {
+            padding: 1em 1.5em;
+        }
     }
 }
 
