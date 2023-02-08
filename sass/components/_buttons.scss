@@ -42,6 +42,10 @@
             color: $color-primary;
         }
     }
+
+    @media only screen and (width > map-get($breakpoints, desktop_L)) {
+        max-width: 520px;
+    }
 }
 
 .omf-button {

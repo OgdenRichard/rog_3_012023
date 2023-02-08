@@ -156,6 +156,11 @@ input {
 .step:hover > i {
   color: #9356DC;
 }
+@media only screen and (width > 1440px) {
+  .step {
+    max-width: 520px;
+  }
+}
 
 .omf-button {
   height: 3em;
@@ -462,6 +467,11 @@ input {
   .omf-howto__steps {
     flex-direction: row;
     gap: 2em;
+  }
+}
+@media only screen and (width > 1440px) {
+  .omf-howto__steps {
+    justify-content: space-between;
   }
 }
 
