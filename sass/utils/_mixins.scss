@@ -28,3 +28,14 @@
         }
     }
 }
+
+@mixin button-styling($gradient_color1, $gradient_color2, $shadow_color) {
+    $base_shadow: darker-shift($shadow_color, 'shadow');
+    background-image: linear-gradient($gradient_color1, $gradient_color2);
+    box-shadow: 0 0.3em 0.8em $base_shadow;
+
+    &:hover {
+        background-image: linear-gradient(lighten($gradient_color1, 3%), lighten($gradient_color2, 3%));
+        box-shadow: 0 0.3em 0.8em darker-shift($base_shadow, 'shadow');
+    }
+}

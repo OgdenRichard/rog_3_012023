@@ -197,13 +197,17 @@ input {
   padding: 0 1.5em;
   border: transparent;
   border-radius: 2em;
-  background-image: linear-gradient(#FF79DA, #9356DC);
   text-align: center;
   font-size: 1em;
   font-weight: 550;
   color: #fff;
   outline: none;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 0.3em 0.8em #bebebe;
+}
+.omf-button:hover {
+  background-image: linear-gradient(#ff88de, #9b63df);
+  box-shadow: 0 0.3em 0.8em #8b8b8b;
 }
 
 .omf-homecard {

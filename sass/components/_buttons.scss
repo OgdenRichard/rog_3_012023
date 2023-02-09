@@ -54,11 +54,10 @@
     padding: 0 1.5em;
     border: transparent;
     border-radius: 2em;
-    background-image: linear-gradient($color-secondary, $color-primary);
     text-align: center;
     font-size: 1em;
     font-weight: 550;
     color: $color-white;
     outline: none;
-    box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
+    @include button-styling($color-secondary,$color-primary,$color-lightgrey);
 }
