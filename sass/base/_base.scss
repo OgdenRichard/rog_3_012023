@@ -2,6 +2,30 @@
     box-sizing: border-box;
 }
 
+header {
+    background: $color-white;
+    padding: 1em 0;
+
+    >h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+        padding: 1.5em 0;
+
+        >h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    @media only screen and (width >=map-get($breakpoints, desktop_L)) {
+        >h1 {
+            font-size: 3em;
+        }
+    }
+}
+
 body {
     width: 100%;
     max-width: 1980px;
@@ -16,7 +40,7 @@ footer {
     background: $color-darkgrey;
     padding: 0 1.5em;
 
-    @media only screen and (width >= map-get($breakpoints, desktop_S)) {
+    @media only screen and (width >=map-get($breakpoints, desktop_S)) {
         display: flex;
         flex-direction: column;
         align-items: center;
