@@ -121,17 +121,13 @@
             background: $color-tertiary;
             transition: all 0.5s ease-in-out;
 
-            >i {
-                font-weight: 600;
-            }
-
             &::after {
                 display: inline-block;
                 padding: 0.5em;
                 content: '\f058';
-                color: $color-white;
                 font-family: 'Font Awesome 5 Free';
-                font-weight: 600;
+                color: $color-white;
+                font-weight: 400;
                 font-size: 1.75em;
                 line-height: 1.75em;
                 text-align: center;
