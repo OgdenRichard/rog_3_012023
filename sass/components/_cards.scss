@@ -8,8 +8,9 @@
     background: $color-white;
     box-shadow: 0 0.3em 0.8em darker-shift($color-white, 'shadow');
 
-    .heart{
-        font-size: 20px;
+    .heart {
+        padding-top: 0.5em;
+        font-size: 22px;
     }
 
     &__link {
@@ -42,17 +43,18 @@
 
     &__info {
         position: relative;
+        height: 30%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 1.5em;
 
         h3 {
-            margin: 0.75em 0 0.5em 0;
+            margin: 0.1em 0 0.3em 0;
         }
 
         p {
-            margin: 0.5em 0 0 0;
+            margin: 0.1em 0 0 0;
         }
     }
 

@@ -241,7 +241,8 @@ input {
   box-shadow: 0 0.3em 0.8em #cccccc;
 }
 .omf-homecard .heart {
-  font-size: 20px;
+  padding-top: 0.5em;
+  font-size: 22px;
 }
 .omf-homecard__link {
   border-radius: 2em;
@@ -269,16 +270,17 @@ input {
 }
 .omf-homecard__info {
   position: relative;
+  height: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5em;
 }
 .omf-homecard__info h3 {
-  margin: 0.75em 0 0.5em 0;
+  margin: 0.1em 0 0.3em 0;
 }
 .omf-homecard__info p {
-  margin: 0.5em 0 0 0;
+  margin: 0.1em 0 0 0;
 }
 @media only screen and (width > 768px) {
   .omf-homecard {
