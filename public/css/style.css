@@ -1,7 +1,7 @@
 @keyframes spinner_fadeout {
   0% {
     background: #f1f1f1;
-    z-index: 2;
+    z-index: 3;
     opacity: 0.9;
   }
   90% {
@@ -9,7 +9,7 @@
     background: #f1f1f1;
   }
   100% {
-    z-index: 2;
+    z-index: 3;
     opacity: 0;
   }
 }
@@ -243,6 +243,7 @@ input {
 .omf-homecard .heart {
   padding-top: 0.5em;
   font-size: 22px;
+  z-index: 2;
 }
 .omf-homecard__link {
   border-radius: 2em;
@@ -438,6 +439,7 @@ input {
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
 .omf-spinner {

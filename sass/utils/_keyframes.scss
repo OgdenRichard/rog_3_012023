@@ -1,7 +1,7 @@
 @keyframes spinner_fadeout {
     0% {
         background: $color-lightgrey;
-        z-index: 2;
+        z-index: 3;
         opacity: .90;
     }
 
@@ -11,7 +11,7 @@
     }
 
     100% {
-        z-index: 2;
+        z-index: 3;
         opacity: 0;
     }
 }
