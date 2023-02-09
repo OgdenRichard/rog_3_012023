@@ -46,11 +46,21 @@
   }
 }
 @keyframes heart {
-  from {
+  0% {
     opacity: 0;
     color: #FF79DA;
   }
-  to {
+  85% {
+    font-size: 1.8em;
+  }
+  90% {
+    font-size: 2em;
+  }
+  95% {
+    font-size: 1.6em;
+  }
+  100% {
+    font-size: 1.8em;
     opacity: 1;
     color: #9356DC;
   }
@@ -230,6 +240,9 @@ input {
   background: #fff;
   box-shadow: 0 0.3em 0.8em #cccccc;
 }
+.omf-homecard .heart {
+  font-size: 20px;
+}
 .omf-homecard__link {
   border-radius: 2em;
 }
@@ -401,7 +414,6 @@ input {
 }
 
 .heart {
-  position: relative;
   flex-shrink: 0;
 }
 .heart::before {
@@ -417,7 +429,7 @@ input {
 .heart:hover::before {
   font-weight: 900;
   color: #9356DC;
-  animation: heart 750ms 1 ease-out;
+  animation: heart 500ms 1 ease-in;
 }
 
 .omf-link {

@@ -59,12 +59,25 @@
 }
 
 @keyframes heart {
-    from {
+    0% {
         opacity: 0;
         color: $color-secondary;
     }
 
-    to {
+    85% {
+        font-size: 1.8em;
+    }
+
+    90% {
+        font-size: 2em;
+    }
+
+    95% {
+        font-size: 1.6em;
+    }
+
+    100% {
+        font-size: 1.8em;
         opacity: 1;
         color: $color-primary;
     }

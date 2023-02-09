@@ -1,6 +1,5 @@
 .omf-homecard {
     height: 260px;
-    //max-width: 680px;
     margin: 0;
     position: relative;
     display: flex;
@@ -8,6 +7,10 @@
     border-radius: 2em;
     background: $color-white;
     box-shadow: 0 0.3em 0.8em darker-shift($color-white, 'shadow');
+
+    .heart{
+        font-size: 20px;
+    }
 
     &__link {
         border-radius: 2em;
@@ -88,7 +91,7 @@
         padding: 0.5em 0;
 
         >h4 {
-            padding:0.75em 0 0.3em 0;
+            padding: 0.75em 0 0.3em 0;
         }
 
         >h4,

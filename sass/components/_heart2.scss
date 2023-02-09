@@ -1,5 +1,4 @@
 .heart {
-    position: relative;
     flex-shrink: 0;
 
     &::before {
@@ -17,7 +16,7 @@
         &::before {
             font-weight: 900;
             color: $color-primary;
-            animation: heart 750ms 1 ease-out;
+            animation: heart 500ms 1 ease-in;
         }
     }
 }
