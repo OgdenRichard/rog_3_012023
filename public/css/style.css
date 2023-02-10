@@ -406,20 +406,20 @@ input {
   width: 100%;
   z-index: -3;
   background: transparent;
-  animation: spinner_fadeout 3300ms;
+  animation: spinner_fadeout 3000ms;
 }
 .omf-spinner__circle {
-  width: 40px;
-  height: 40px;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin: -20px 0 0 -20px;
-  border-radius: 40px;
   background: #fff;
   box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
   transform: translate(-50%, -50%);
   animation: spinner_rotate 3000ms infinite ease-in, spinner_color 3000ms infinite ease-in;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  margin: -17.5px 0 0 -17.5px;
 }
 .omf-spinner__circle:nth-of-type(1) {
   opacity: 0.3;

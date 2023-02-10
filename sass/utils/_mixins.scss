@@ -16,11 +16,12 @@
     }
 }
 
+// ajustement de la taille du spinner exprimée en pixels
 @mixin spinner_sizing($size) {
-    $margin_val: #{-math.div($size,2)}px;
+    $margin_val: #{-(math.div($size,2))}px;
     width: #{$size}px;
     height: #{$size}px;
-    border-radius: $size;
+    border-radius: #{$size}px;
     margin: $margin_val 0 0 $margin_val;
 }
 
