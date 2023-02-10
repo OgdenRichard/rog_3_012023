@@ -16,6 +16,14 @@
     }
 }
 
+@mixin spinner_sizing($size) {
+    $margin_val: #{-math.div($size,2)}px;
+    width: #{$size}px;
+    height: #{$size}px;
+    border-radius: $size;
+    margin: $margin_val 0 0 $margin_val;
+}
+
 // ajustement du délai sur le fade-in des cartes menus en fonction de la durée totale et du nombre de cartes
 @mixin cards_delay($nb_cards: 5) {
     $initial_delay: math.div(map-get($durations, card_fadein), 10);
