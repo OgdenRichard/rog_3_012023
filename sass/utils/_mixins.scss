@@ -1,5 +1,6 @@
 @use "sass:math";
 
+// ajustement du délai en fonction du nombre d'éléments du spinner
 @mixin spinner_styling($nb_elements: 6, $initial_delay: 250, $opacity: .3) {
     $delay: $initial_delay;
 
@@ -15,7 +16,7 @@
     }
 }
 
-
+// ajustement du délai sur le fade-in des cartes menus en fonction de la durée totale et du nombre de cartes
 @mixin cards_delay($nb_cards: 5) {
     $initial_delay: math.div(map-get($durations, card_fadein), 10);
     $delay: 0;
@@ -29,6 +30,7 @@
     }
 }
 
+// ajustement de la couleur et de l'ombre portée des bouton au survol
 @mixin button-styling($gradient_color1, $gradient_color2, $shadow_color) {
     $base_shadow: darker-shift($shadow_color, 'shadow');
     background-image: linear-gradient($gradient_color1, $gradient_color2);

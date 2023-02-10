@@ -1,3 +1,4 @@
+// overlay sous le spinner
 @keyframes spinner_fadeout {
     0% {
         background: $color-lightgrey;
@@ -16,6 +17,7 @@
     }
 }
 
+// opacité du spinner
 @keyframes spinner_color {
     0% {
         background: $color-primary;
@@ -30,6 +32,7 @@
     }
 }
 
+// rotation du spinner
 @keyframes spinner_rotate {
 
     0%,
@@ -42,6 +45,7 @@
     }
 }
 
+// fondu entrant et animation des cartes menus
 @keyframes dish_card_fadein {
     0% {
         opacity: 0;
@@ -58,6 +62,7 @@
     }
 }
 
+// remplissage et battement de l'icône coeur
 @keyframes heart {
     0% {
         opacity: 0;
