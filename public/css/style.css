@@ -468,6 +468,66 @@ input {
   }
 }
 
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.form > h2 {
+  margin: 2em 0 0.5em 0;
+}
+.form > p {
+  margin: 0.5em 0 2em 0;
+  font-weight: 500;
+}
+.form__input-text-wrapper > input {
+  height: 3em;
+  padding: 0 1.5em;
+  outline: none;
+  border: transparent;
+  background: transparent;
+  text-align: center;
+}
+.form__input-text-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d8d8d8;
+  box-shadow: inset 0 0.3em 0.2em #bebebe;
+}
+.form__input-text-wrapper > input {
+  width: 160px;
+  padding-left: 0.5em;
+}
+.form__input-text-wrapper > i,
+.form__input-text-wrapper > input {
+  color: #464646;
+}
+
+.omf-footer__list li {
+  line-height: 2em;
+}
+.omf-footer__list i {
+  display: inline-block;
+  width: 1em;
+  margin-right: 1em;
+}
+@media only screen and (width >= 1140px) {
+  .omf-footer__list {
+    padding-bottom: 3em;
+  }
+  .omf-footer__list > li {
+    display: inline-block;
+    padding-right: 2em;
+  }
+  .omf-footer__list i {
+    margin-right: 0.75em;
+  }
+}
+
 .omf-search,
 .omf-restaurants-list {
   background: #f1f1f1;
@@ -599,66 +659,6 @@ input {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.form > h2 {
-  margin: 2em 0 0.5em 0;
-}
-.form > p {
-  margin: 0.5em 0 2em 0;
-  font-weight: 500;
-}
-.form__input-text-wrapper > input {
-  height: 3em;
-  padding: 0 1.5em;
-  outline: none;
-  border: transparent;
-  background: transparent;
-  text-align: center;
-}
-.form__input-text-wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #d8d8d8;
-  box-shadow: inset 0 0.3em 0.2em #bebebe;
-}
-.form__input-text-wrapper > input {
-  width: 160px;
-  padding-left: 0.5em;
-}
-.form__input-text-wrapper > i,
-.form__input-text-wrapper > input {
-  color: #464646;
-}
-
-.omf-footer__list li {
-  line-height: 2em;
-}
-.omf-footer__list i {
-  display: inline-block;
-  width: 1em;
-  margin-right: 1em;
-}
-@media only screen and (width >= 1140px) {
-  .omf-footer__list {
-    padding-bottom: 3em;
-  }
-  .omf-footer__list > li {
-    display: inline-block;
-    padding-right: 2em;
-  }
-  .omf-footer__list i {
-    margin-right: 0.75em;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

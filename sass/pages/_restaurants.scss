@@ -1,0 +1,81 @@
+.omf-restaurant {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.omf-restaurant-wrapper {
+    position: relative;
+    margin-top: 15em;
+    padding: 1em 1.5em 4em 1.5em;
+    border-radius: 3em 3em 0 0;
+    background: $color-lightgrey;
+}
+
+.omf-restaurant-img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+.omf-restaurant__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.75em;
+    padding-bottom: 2em;
+
+    >div {
+        margin-left: 1em;
+    }
+}
+
+.omf-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+            flex: 25%;
+        }
+    }
+}
+
+.omf-category-title {
+    >h3 {
+        margin: 0;
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 3.125em;
+        margin: 0.5em 0 1em 0;
+        padding: 0;
+        border-top: 3px solid $color-tertiary;
+    }
+
+}
+
+.omf-restaurant__order {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
