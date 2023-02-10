@@ -87,7 +87,6 @@
     background: $color-lightgrey;
 }
 
-// TODO : redimensionnement image media query
 .omf-restaurant-img {
     position: absolute;
     width: 100%;
@@ -137,13 +136,16 @@
     >h3 {
         margin: 0;
     }
-}
 
-.underline {
-    width: 3.125em;
-    margin: 0.5em 0 1em 0;
-    padding: 0;
-    border-top: 3px solid $color-tertiary;
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 3.125em;
+        margin: 0.5em 0 1em 0;
+        padding: 0;
+        border-top: 3px solid $color-tertiary;
+    }
+
 }
 
 .omf-restaurant__order {
