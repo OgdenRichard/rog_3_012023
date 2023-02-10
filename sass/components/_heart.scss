@@ -1,50 +1,25 @@
 @use "sass:math";
 
 .omf-heart {
-    position: relative;
-    width: $heart-size;
-    height: $heart-size;
     flex-shrink: 0;
-    border: $heart-border solid $color-darkgrey;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    transform: rotate(-45deg);
-    z-index: 1;
-
-    &:hover {
-        background: $color-primary;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-
-        &::before,
-        &::after {
-            background: $color-primary;
-            border-top-color: transparent;
-            border-left-color: transparent;
-        }
-    }
-
-    &::before,
-    &::after {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        content: '';
-        border-radius: 50%;
-        border: $heart-border solid $color-darkgrey;
-        border-bottom-color: transparent;
-        border-right-color: transparent;
-    }
+    font-size: 22px;
 
     &::before {
-        top: -(math.div($heart-size, 2));
-        left: -$heart-border;
-        transform: rotate(45deg);
+        display: inline-block;
+        padding-bottom: 0.2em;
+        content: '\f004';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+        font-size: 1.8em;
+        line-height: 1.75em;
+        text-align: center;
     }
 
-    &::after {
-        top: -$heart-border;
-        left: math.div($heart-size, 2) - $heart-border*2;
-        transform: rotate(135deg);
+    &:hover {
+        &::before {
+            font-weight: 900;
+            color: $color-primary;
+            animation: heart 500ms 1 ease-in;
+        }
     }
 }
