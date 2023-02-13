@@ -17,5 +17,13 @@
         @media only screen and (width <=map-get($breakpoints, mobile)) {
             left: 1em;
         }
+
+        @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+            top: 2.75em;
+        }
+
+        @media only screen and (width >=map-get($breakpoints, desktop_L)) {
+            top: 3.25em;
+        }
     }
 }
