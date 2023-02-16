@@ -137,8 +137,9 @@ input {
 }
 
 h1,
-footer > h2 {
-  font-family: "shrikhand", "Roboto", sans-serif;
+footer > h2,
+.omf-restaurant__title > h2 {
+  font-family: "Shrikhand", "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -156,8 +157,8 @@ input {
   font-weight: 550;
 }
 
-.omf-restaurant__title {
-  font-size: 1.25em;
+.omf-restaurant__title > h2 {
+  font-size: 1.75em;
 }
 
 .omf-category-title > h3 {
