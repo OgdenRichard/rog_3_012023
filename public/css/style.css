@@ -54,13 +54,13 @@
     font-size: 1.8em;
   }
   90% {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   95% {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
   100% {
-    font-size: 1.8em;
+    font-size: 1.5em;
     opacity: 1;
     color: #9356DC;
   }
@@ -619,6 +619,7 @@ input {
 }
 
 .omf-restaurant__title {
+  height: 122px;
   display: flex;
   justify-content: space-between;
   align-items: center;
