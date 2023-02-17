@@ -83,7 +83,7 @@
     overflow: hidden;
     background: $color-white;
     box-shadow: 0 0.3em 0.8em darker-shift($color-lightgrey, 'shadow');
-    animation: dish_card_fadein 1500ms 1 ease-out;
+    animation: dish_card_fadein 1500ms 1 cubic-bezier(.12,.83,.26,.95);
     animation-fill-mode: backwards;
     @include cards_delay;
 
