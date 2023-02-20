@@ -48,7 +48,6 @@
 @keyframes heart {
   0% {
     opacity: 0;
-    color: #FF79DA;
   }
   85% {
     font-size: 1.8em;
@@ -62,7 +61,6 @@
   100% {
     font-size: 1.5em;
     opacity: 1;
-    color: #9356DC;
   }
 }
 * {
@@ -381,6 +379,7 @@ input {
 .omf-heart::before {
   display: inline-block;
   padding-bottom: 0.2em;
+  padding-right: 0.1em;
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
@@ -390,7 +389,9 @@ input {
 }
 .omf-heart:hover::before {
   font-weight: 900;
-  color: #9356DC;
+  background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: heart 500ms 1 ease-in;
 }
 

@@ -7,6 +7,7 @@
     &::before {
         display: inline-block;
         padding-bottom: 0.2em;
+        padding-right: 0.1em;
         content: '\f004';
         font-family: 'Font Awesome 5 Free';
         font-weight: 400;
@@ -18,7 +19,9 @@
     &:hover {
         &::before {
             font-weight: 900;
-            color: $color-primary;
+            background: -webkit-gradient(linear, left bottom, right top, from($color-secondary), to($color-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             animation: heart 500ms 1 ease-in;
         }
     }
