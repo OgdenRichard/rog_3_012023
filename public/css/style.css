@@ -308,7 +308,7 @@ input {
   overflow: hidden;
   background: #fff;
   box-shadow: 0 0.3em 0.8em #bebebe;
-  animation: dish_card_fadein 1500ms 1 cubic-bezier(0.12, 0.83, 0.26, 0.95);
+  animation: dish_card_fadein 2000ms 1 cubic-bezier(0.12, 0.83, 0.26, 0.95);
   animation-fill-mode: backwards;
 }
 .omf-dish-card:nth-of-type(3) {
