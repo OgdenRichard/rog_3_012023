@@ -399,6 +399,7 @@ input {
   font-weight: 900;
   background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: heart 500ms 1 ease-in;
 }
