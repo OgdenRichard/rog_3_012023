@@ -14,6 +14,9 @@
         font-size: 1.8em;
         line-height: 1.75em;
         text-align: center;
+       /*  @media only screen and (max-width:map-get($breakpoints, mobile_S)) {
+            font-size: 1.6em;
+        } */
     }
 
     &:hover {

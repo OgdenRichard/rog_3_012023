@@ -158,6 +158,11 @@ input {
 .omf-restaurant__title > h2 {
   font-size: 1.75em;
 }
+@media only screen and (max-width: 420px) {
+  .omf-restaurant__title > h2 {
+    font-size: 6.3vw;
+  }
+}
 
 .omf-category-title > h3 {
   font-weight: 200;
@@ -386,6 +391,9 @@ input {
   font-size: 1.8em;
   line-height: 1.75em;
   text-align: center;
+  /*  @media only screen and (max-width:map-get($breakpoints, mobile_S)) {
+       font-size: 1.6em;
+   } */
 }
 .omf-heart:hover::before {
   font-weight: 900;
@@ -626,6 +634,11 @@ input {
   align-items: center;
   padding-right: 1.75em;
   padding-bottom: 2em;
+}
+@media only screen and (max-width: 480px) {
+  .omf-restaurant__title {
+    padding-right: 0.8em;
+  }
 }
 .omf-restaurant__title > div {
   margin-left: 1em;

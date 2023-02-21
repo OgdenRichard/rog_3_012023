@@ -27,6 +27,10 @@ input {
 
 .omf-restaurant__title>h2 {
     font-size: 1.75em;
+
+    @media only screen and (max-width:map-get($breakpoints, mobile_S)) {
+        font-size: 6.3vw;
+    }
 }
 
 .omf-category-title {
