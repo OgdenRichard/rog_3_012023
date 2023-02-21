@@ -9,7 +9,7 @@
         margin-right: 1em;
     }
 
-    @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+    @media only screen and (min-width:map-get($breakpoints, desktop_S)) {
         padding-bottom: 3em;
 
         >li {

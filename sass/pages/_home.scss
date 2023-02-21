@@ -27,12 +27,12 @@
     flex-direction: column;
     gap: 1.25em;
 
-    @media only screen and (width > map-get($breakpoints, tablets)) {
+    @media only screen and (min-width:map-get($breakpoints, tablets)) {
         flex-direction: row;
         gap: 2em;
     }
 
-    @media only screen and (width >=map-get($breakpoints, desktop_L)) {
+    @media only screen and (min-width:map-get($breakpoints, desktop_L)) {
         justify-content: space-between;
     }
 }
@@ -45,7 +45,7 @@
     justify-content: space-around;
     gap: 2em;
 
-    @media only screen and (width > map-get($breakpoints, tablets)) {
+    @media only screen and (min-width:map-get($breakpoints, tablets)) {
         flex-direction: row;
         flex-wrap: wrap;
     }

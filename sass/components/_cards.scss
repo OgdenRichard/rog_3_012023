@@ -58,11 +58,11 @@
         }
     }
 
-    @media only screen and (width > map-get($breakpoints, tablets)) {
+    @media only screen and (min-width:map-get($breakpoints, tablets)) {
         flex: 40%;
     }
 
-    @media only screen and (width >=map-get($breakpoints, desktop_L)) {
+    @media only screen and (min-width:map-get($breakpoints, desktop_L)) {
         height: 350px;
         max-width: 800px;
 

@@ -75,7 +75,7 @@ header > h1 {
   margin: 0;
   padding: 0;
 }
-@media only screen and (width >= 1140px) {
+@media only screen and (min-width: 1140px) {
   header {
     padding: 1.5em 0;
   }
@@ -83,7 +83,7 @@ header > h1 {
     font-size: 2.5em;
   }
 }
-@media only screen and (width >= 1440px) {
+@media only screen and (min-width: 1440px) {
   header > h1 {
     font-size: 3em;
   }
@@ -103,7 +103,7 @@ footer {
   background: #2c2c2c;
   padding: 0 1.5em;
 }
-@media only screen and (width >= 1140px) {
+@media only screen and (min-width: 1140px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -204,7 +204,7 @@ input {
 .step:hover > i {
   color: #9356DC;
 }
-@media only screen and (width > 1440px) {
+@media only screen and (min-width: 1440px) {
   .step {
     max-width: 520px;
   }
@@ -281,12 +281,12 @@ input {
 .omf-homecard__info p {
   margin: 0.1em 0 0 0;
 }
-@media only screen and (width > 768px) {
+@media only screen and (min-width: 768px) {
   .omf-homecard {
     flex: 40%;
   }
 }
-@media only screen and (width >= 1440px) {
+@media only screen and (min-width: 1440px) {
   .omf-homecard {
     height: 350px;
     max-width: 800px;
@@ -464,17 +464,17 @@ input {
   z-index: 1;
   color: #464646;
 }
-@media only screen and (width <= 480px) {
+@media only screen and (max-width: 480px) {
   .omf-header__breadcrumb {
     left: 1em;
   }
 }
-@media only screen and (width >= 1140px) {
+@media only screen and (min-width: 1140px) {
   .omf-header__breadcrumb {
     top: 2.75em;
   }
 }
-@media only screen and (width >= 1440px) {
+@media only screen and (min-width: 1440px) {
   .omf-header__breadcrumb {
     top: 3.25em;
   }
@@ -527,7 +527,7 @@ input {
   width: 1em;
   margin-right: 1em;
 }
-@media only screen and (width >= 1140px) {
+@media only screen and (min-width: 1140px) {
   .omf-footer__list {
     padding-bottom: 3em;
   }
@@ -569,13 +569,13 @@ input {
   flex-direction: column;
   gap: 1.25em;
 }
-@media only screen and (width > 768px) {
+@media only screen and (min-width: 768px) {
   .omf-howto__steps {
     flex-direction: row;
     gap: 2em;
   }
 }
-@media only screen and (width >= 1440px) {
+@media only screen and (min-width: 1440px) {
   .omf-howto__steps {
     justify-content: space-between;
   }
@@ -589,7 +589,7 @@ input {
   justify-content: space-around;
   gap: 2em;
 }
-@media only screen and (width > 768px) {
+@media only screen and (min-width: 768px) {
   .omf-restaurants-list__cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -637,7 +637,7 @@ input {
   flex-direction: column;
   padding-bottom: 0;
 }
-@media only screen and (width >= 1140px) {
+@media only screen and (min-width: 1140px) {
   .omf-menu {
     flex-direction: row;
     flex-wrap: wrap;
@@ -649,7 +649,7 @@ input {
   flex-direction: column;
   gap: 1em;
 }
-@media only screen and (width >= 1140px) {
+@media only screen and (min-width: 1140px) {
   .omf-menu__category {
     flex: 25%;
   }

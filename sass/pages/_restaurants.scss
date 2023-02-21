@@ -40,7 +40,7 @@
     flex-direction: column;
     padding-bottom: 0;
 
-    @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+    @media only screen and (min-width:map-get($breakpoints, desktop_S)) {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 2em;
@@ -52,7 +52,7 @@
         flex-direction: column;
         gap: 1em;
 
-        @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+        @media only screen and (min-width:map-get($breakpoints, desktop_S)) {
             flex: 25%;
         }
     }

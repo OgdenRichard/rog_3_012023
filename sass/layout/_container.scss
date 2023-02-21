@@ -14,15 +14,15 @@
         z-index: 1;
         color: lighten($color-darkgrey, 10%);
 
-        @media only screen and (width <=map-get($breakpoints, mobile)) {
+        @media only screen and (max-width:map-get($breakpoints, mobile)) {
             left: 1em;
         }
 
-        @media only screen and (width >=map-get($breakpoints, desktop_S)) {
+        @media only screen and (min-width:map-get($breakpoints, desktop_S)) {
             top: 2.75em;
         }
 
-        @media only screen and (width >=map-get($breakpoints, desktop_L)) {
+        @media only screen and (min-width:map-get($breakpoints, desktop_L)) {
             top: 3.25em;
         }
     }
